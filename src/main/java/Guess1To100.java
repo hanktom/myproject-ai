@@ -9,18 +9,27 @@ public class Guess1To100 {
         Scanner scanner = new Scanner(System.in);
         int min = 1;
         int max = 100;
-        System.out.println("Numer:" + min + "-" + max);
-        System.out.println("Enter a number:");
-        String s = scanner.next();
-        int n = Integer.parseInt(s);
-        if (n > secret) {
-
-        } else {
-            if (n < secret) {
-
+        boolean win = false;
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Please enter a numer between " + min + " to " + max);
+            String s = scanner.next();
+            int n = Integer.parseInt(s);
+            if (n > secret) {
+                max = n;
             } else {
-
+                if (n < secret) {
+                    min = n;
+                } else {
+                    win = true;
+                    break;
+                }
             }
         }
+        if (win) {
+            System.out.println("You win!");
+        } else {
+            System.out.println("You loose!");
+        }
+
     }
 }
