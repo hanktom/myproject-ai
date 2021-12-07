@@ -16,7 +16,7 @@ public class DiceCounter {
         int max = 0;
         int point = 0;
         for (int i = 0; i < 6; i++) {
-            //System.out.println((i+1) + " " + counters[i] + " times");
+            System.out.println((i+1) + " " + counters[i] + " times");
             if (counters[i] > max) {
                 max = counters[i];
                 point = i;
