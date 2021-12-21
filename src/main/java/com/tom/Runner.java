@@ -10,7 +10,11 @@ public class Runner {
         Person p = new Person();
         Person p2 = new Person();
         p.age = 18;
+        p.height = 1.7f;
+        p.weight = 66.6f;
         p.print();
+        System.out.println(p.bmi());
+
         System.out.println(p.age);
         System.out.println(p2.age);
     }

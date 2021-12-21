@@ -5,6 +5,10 @@ public class Person {
     float height;
     float weight;
     public void print() {
-        System.out.println("haha");
+        System.out.println(age + "\t" + height + "\t" + weight);
+    }
+    public float bmi() {
+        float bmi = weight/(height*height);
+        return bmi;
     }
 }
