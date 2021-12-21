@@ -2,6 +2,7 @@ package com.tom;
 
 public class Poker {
     public static void main(String[] args) {
+        //store data!
         String tt = "cdhs";
         char[] types = {'c', 'd', 'h', 's'};
         for (int i = 0; i < 4; i++) {

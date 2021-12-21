@@ -7,8 +7,11 @@ public class Runner {
         float bmi = w/(h*h);
         System.out.println("Your BMI is " + bmi);
 
-        Person person = new Person(1.7f, 65.5f);
-        System.out.println("Your BMI is " + person.bmi());
-//        person.
+        Person p = new Person();
+        Person p2 = new Person();
+        p.age = 18;
+        p.print();
+        System.out.println(p.age);
+        System.out.println(p2.age);
     }
 }

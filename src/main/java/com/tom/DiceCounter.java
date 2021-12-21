@@ -6,12 +6,13 @@ public class DiceCounter {
     //rolling dice 10 times
     //counting points
     public static void main(String[] args) {
-        Random random = new Random();
+
         int[] counters = new int[6];
         for (int i = 0; i < 10; i++) {
-            int n = random.nextInt(6)+1;
-            System.out.println(n);
-            counters[n-1]++;
+            Dice dice = new Dice();
+
+            System.out.println(dice.point);
+            counters[dice.point-1]++;
         }
         int max = 0;
         int point = 0;
