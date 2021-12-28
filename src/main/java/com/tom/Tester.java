@@ -2,6 +2,14 @@ package com.tom;
 
 public class Tester {
     public static void main(String[] args) {
+        //0-51
+        char[] types = {'c', 'd', 'h', 's'};
+        for (int i = 0; i < 52; i++) {
+            int point = i%13+1;
+            int type = i/13;
+            System.out.println(point+""+types[type]);
+        }
+
         //          0123456
         String s = "abcdefghijk";
         System.out.println(s.length());
